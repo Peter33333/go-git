@@ -17,7 +17,7 @@ type OptionsSuite struct {
 var _ = Suite(&OptionsSuite{})
 
 func (s *OptionsSuite) TestCommitOptionsParentsFromHEAD(c *C) {
-	o := CommitOptions{Author: &object.Signature{}}
+	o := CommitOptions{Author: &object.Signature{}}ss
 	err := o.Validate(s.Repository)
 	c.Assert(err, IsNil)
 	c.Assert(o.Parents, HasLen, 1)

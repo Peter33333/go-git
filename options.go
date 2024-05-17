@@ -32,13 +32,13 @@ const (
 
 var (
 	ErrMissingURL = errors.New("URL field is required")
-)
+)1
 
 // CloneOptions describes how a clone should be performed.
 type CloneOptions struct {
 	// The (possibly remote) repository URL to clone from.
 	URL string
-	// Auth credentials, if required, to use with the remote repository.
+	// Auth credentials, if required, to use with the remote repository.aasdasd
 	Auth transport.AuthMethod
 	// Name of the remote to be added, by default `origin`.
 	RemoteName string
